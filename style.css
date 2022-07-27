@@ -1,0 +1,68 @@
+body
+{
+background: linear-gradient(to right, rgb(9, 180, 3) 40%, rgb(1, 202, 162) 100%); 
+}
+.top
+{
+    border-color: black;
+    border-style:groove;
+    border-width: 5px;
+    border-radius: 20px;
+    width: 30%;
+    background: radial-gradient(rgb(203, 106, 10) 20%, rgb(187, 203, 10) 50%, rgb(6, 176, 65) 100%);
+}
+h3
+{
+font-family: 'Times New Roman', Times, serif;
+color:black;
+}
+h4
+{
+border-radius: 40px;
+border-color: rgb(22, 10, 53);
+border-style:outset;
+border-width: 9;
+width:50%;
+}
+#capture
+{
+background-color: rgb(121, 121, 255);
+width: 150px;
+color: black;
+border-radius: 20px;
+border-style: double;
+border-color: black;
+border-width: 3px;
+font-size: large;
+}
+#predict
+{
+background-color: rgb(230, 86, 86);
+width: 150px;
+color: black;
+border-radius: 20px;
+border-style: double;
+border-color: black;
+border-width: 3px;
+font-size: large;
+}
+#webcam
+{
+    color: black;
+    border-radius: 20px;
+    border-style:dashed;
+    border-color: black;
+    border-width: 5px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+#snapshot
+{
+    color: black;
+    border-radius: 20px;
+    border-style:dashed;
+    border-color: black;
+    border-width: 5px;
+    height: 300px;
+    margin-bottom: 40px;
+}

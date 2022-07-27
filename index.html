@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="top btn">
+                <h2>Hand Gestures<br>
+                    <span id="hands">
+                        ✌ | 👌 | 🤙 | 🤟 | 🤞
+                    </span>
+                </h2>
+            </div>
+            <h3> Take a selfie and figure out what your gesture means</h3>
+            <h3>Try One Of These<br>
+                <span>👌 | 👍 | ✌</span>
+            </h3>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                <h4>Webcam View-</h4>
+                <div id="webcam"></div>
+                <button onclick="TakeSnapShot()" id="capture">Capture Image</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h4>Prediction</h4>
+                <p>Pridiction is <span id="firstpridiction"></span></p>
+                <p>Confidence is <span id="secondpridiction"></span></p>
+                <p><span id="emoji"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h4>Snapshot</h4>
+                <div id="snapshot"></div>
+                <button id="predict" onclick="check()">Predict Gesture</button>
+            </div>
+        </center>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
